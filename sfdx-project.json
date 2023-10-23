@@ -1,0 +1,12 @@
+{
+    "packageDirectories": [
+      {
+        "path": "force-app",
+        "default": true
+      }
+    ],
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "namespace": "",
+    "signupTargetLoginUrl": "https://ora3.test1.pc-rnd.pc-aws.salesforce.com",
+    "sourceApiVersion": "60.0"
+  }

@@ -1,0 +1,26 @@
+{
+  "name": "service-catalog-copilot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Catalog items for Einstein Copilot",
+  "scripts": {
+    "prettier": "prettier --write \"**/*.{md,xml,yaml,yml}\"",
+    "prettier:verify": "prettier --list-different \"**/*.{md,xml,yaml,yml}\"",
+    "postinstall": "husky install",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "^2.0.1",
+    "eslint": "^8.11.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.0"
+  },
+  "lint-staged": {
+    "**/*.{md,xml,yaml,yml}": [
+      "prettier --write"
+    ]
+  }
+}
