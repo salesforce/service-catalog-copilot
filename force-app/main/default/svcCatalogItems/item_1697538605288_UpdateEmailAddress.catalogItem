@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <description>&lt;p&gt;When a user states “change email&amp;quot;, “update email”, &amp;quot;provide email&amp;quot;, or any similar input with the same user intent, update the user’s email associated with their contact record. &lt;/p&gt;</description>
+    <fulfillmentFlow>fulfillmentflow_1697538503390_UpdateEmailAddress</fulfillmentFlow>
+    <inputs>
+        <inputType>SinglelineText</inputType>
+        <inputVariable>Firstname</inputVariable>
+        <isRequired>true</isRequired>
+        <label>Firstname</label>
+        <name>Firstname_mapping</name>
+        <type>UserQuestion</type>
+    </inputs>
+    <inputs>
+        <inputType>SinglelineText</inputType>
+        <inputVariable>Lastname</inputVariable>
+        <isRequired>true</isRequired>
+        <label>Lastname</label>
+        <name>Lastname_mapping</name>
+        <type>UserQuestion</type>
+    </inputs>
+    <inputs>
+        <inputType>SinglelineText</inputType>
+        <inputVariable>PhoneNumber</inputVariable>
+        <isRequired>true</isRequired>
+        <label>Phone Number</label>
+        <name>PhoneNumber_mapping</name>
+        <type>UserQuestion</type>
+    </inputs>
+    <inputs>
+        <inputType>Email</inputType>
+        <inputVariable>PreviousEmailAddress</inputVariable>
+        <isRequired>true</isRequired>
+        <label>Previous Email Address</label>
+        <name>PreviousEmailAddress_mapping</name>
+        <type>UserQuestion</type>
+    </inputs>
+    <inputs>
+        <inputType>Email</inputType>
+        <inputVariable>NewEmailAddress</inputVariable>
+        <isRequired>true</isRequired>
+        <label>New Email Address</label>
+        <name>NewEmailAddress_mapping</name>
+        <type>UserQuestion</type>
+    </inputs>
+    <isFeatured>false</isFeatured>
+    <isProtected>false</isProtected>
+    <masterLabel>Update Email Address</masterLabel>
+    <status>Published</status>
+</SvcCatalogItemDef>

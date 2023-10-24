@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;Create a new case for the user. If a user contact record doesn&amp;#39;t exist, a new contact record is created. &lt;/span&gt;&lt;/p&gt;</description>
+    <flow>Autolaunch_Create_New_Case</flow>
+    <isProtected>false</isProtected>
+    <items>
+        <catalogInputVariable>Firstname_Input</catalogInputVariable>
+        <displayType>Text</displayType>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
+        <isRequired>true</isRequired>
+        <masterLabel>Firstname</masterLabel>
+    </items>
+    <items>
+        <catalogInputVariable>Lastname_Input</catalogInputVariable>
+        <displayType>Text</displayType>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
+        <isRequired>true</isRequired>
+        <masterLabel>Lastname</masterLabel>
+    </items>
+    <items>
+        <catalogInputVariable>Email_Input</catalogInputVariable>
+        <displayType>Text</displayType>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
+        <isRequired>true</isRequired>
+        <masterLabel>Email</masterLabel>
+    </items>
+    <items>
+        <catalogInputVariable>Phone_Number_Ipnut</catalogInputVariable>
+        <displayType>Text</displayType>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
+        <isRequired>true</isRequired>
+        <masterLabel>Phone Number</masterLabel>
+    </items>
+    <items>
+        <catalogInputVariable>Description_Input</catalogInputVariable>
+        <displayType>Text</displayType>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
+        <isRequired>true</isRequired>
+        <masterLabel>Case Description</masterLabel>
+    </items>
+    <masterLabel>Create New Case</masterLabel>
+</SvcCatalogFulfillmentFlow>

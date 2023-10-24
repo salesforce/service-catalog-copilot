@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Update user’s email associated with their contact record.</description>
+    <flow>Autolaunch_Update_Email_Address</flow>
+    <isProtected>false</isProtected>
+    <items>
+        <catalogInputVariable>Firstname</catalogInputVariable>
+        <displayType>Text</displayType>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
+        <isRequired>false</isRequired>
+        <masterLabel>Firstname</masterLabel>
+    </items>
+    <items>
+        <catalogInputVariable>Lastname</catalogInputVariable>
+        <displayType>Text</displayType>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
+        <isRequired>false</isRequired>
+        <masterLabel>Lastname</masterLabel>
+    </items>
+    <items>
+        <catalogInputVariable>NewEmailAddress</catalogInputVariable>
+        <displayType>Text</displayType>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
+        <isRequired>false</isRequired>
+        <masterLabel>NewEmailAddress</masterLabel>
+    </items>
+    <items>
+        <catalogInputVariable>PhoneNumber</catalogInputVariable>
+        <displayType>Text</displayType>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
+        <isRequired>false</isRequired>
+        <masterLabel>PhoneNumber</masterLabel>
+    </items>
+    <items>
+        <catalogInputVariable>PreviousEmailAddress</catalogInputVariable>
+        <displayType>Text</displayType>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
+        <isRequired>false</isRequired>
+        <masterLabel>PreviousEmailAddress</masterLabel>
+    </items>
+    <masterLabel>Update Email Address</masterLabel>
+</SvcCatalogFulfillmentFlow>
