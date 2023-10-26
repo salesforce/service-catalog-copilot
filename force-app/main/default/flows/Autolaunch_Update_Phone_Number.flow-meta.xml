@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
-    <description>Autolaunch flow design to update Email address for catalog item and bot usage.</description>
+    <description
+  >Autolaunch flow design to update Phone Number for catalog item and bot usage.</description>
     <environments>Default</environments>
-    <interviewLabel>Autolaunch - Update Email Address {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Autolaunch - Update Email Address</label>
+    <interviewLabel
+  >Autolaunch - Update Phone Number {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Autolaunch - Update Phone Number</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -25,9 +27,10 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
-        <description>Update the Email field from the Contact record</description>
-        <name>Update_Email</name>
-        <label>Update Contact Record - Email</label>
+        <description
+    >Update the Email field from the Contact record</description>
+        <name>Update_Phone_Number</name>
+        <label>Update Contact Record - Phone Number</label>
         <locationX>176</locationX>
         <locationY>134</locationY>
         <filterLogic>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7) AND 8</filterLogic>
@@ -46,51 +49,51 @@
             </value>
         </filters>
         <filters>
-            <field>Phone</field>
+            <field>AssistantPhone</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>PhoneNumber</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>OtherPhone</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>PhoneNumber</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>MobilePhone</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>PhoneNumber</elementReference>
+                <elementReference>PreviousPhoneNumber</elementReference>
             </value>
         </filters>
         <filters>
             <field>HomePhone</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>PhoneNumber</elementReference>
+                <elementReference>PreviousPhoneNumber</elementReference>
             </value>
         </filters>
         <filters>
-            <field>AssistantPhone</field>
+            <field>MobilePhone</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>PhoneNumber</elementReference>
+                <elementReference>PreviousPhoneNumber</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>OtherPhone</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>PreviousPhoneNumber</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Phone</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>PreviousPhoneNumber</elementReference>
             </value>
         </filters>
         <filters>
             <field>Email</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>PreviousEmailAddress</elementReference>
+                <elementReference>Email</elementReference>
             </value>
         </filters>
         <inputAssignments>
-            <field>Email</field>
+            <field>Phone</field>
             <value>
-                <elementReference>NewEmailAddress</elementReference>
+                <elementReference>NewPhoneNumber</elementReference>
             </value>
         </inputAssignments>
         <object>Contact</object>
@@ -99,10 +102,17 @@
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Update_Email</targetReference>
+            <targetReference>Update_Phone_Number</targetReference>
         </connector>
     </start>
     <status>Active</status>
+    <variables>
+        <name>Email</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
     <variables>
         <name>Firstname</name>
         <dataType>String</dataType>
@@ -118,21 +128,14 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <name>NewEmailAddress</name>
+        <name>NewPhoneNumber</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <name>PhoneNumber</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>PreviousEmailAddress</name>
+        <name>PreviousPhoneNumber</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
     <decisions>
@@ -27,7 +27,8 @@
         </rules>
     </decisions>
     <environments>Default</environments>
-    <interviewLabel>Autolaunch - Create New Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <interviewLabel
+  >Autolaunch - Create New Case {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Autolaunch - Create New Case</label>
     <processMetadataValues>
         <name>BuilderType</name>
@@ -91,7 +92,8 @@
         <label>Create Contact</label>
         <locationX>50</locationX>
         <locationY>350</locationY>
-        <assignRecordIdToReference>Current_Contact.Id</assignRecordIdToReference>
+        <assignRecordIdToReference
+    >Current_Contact.Id</assignRecordIdToReference>
         <connector>
             <targetReference>Create_Case</targetReference>
         </connector>
@@ -127,7 +129,8 @@
         <label>Get Contact id</label>
         <locationX>182</locationX>
         <locationY>134</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound
+    >false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Does_Contact_Exists</targetReference>
         </connector>

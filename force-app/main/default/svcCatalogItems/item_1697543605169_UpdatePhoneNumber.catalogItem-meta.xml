@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <SvcCatalogItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
-    <description>&lt;p&gt;When a user states “change email&amp;quot;, “update email”, &amp;quot;provide email&amp;quot;, or any similar input with the same user intent, update the user’s email associated with their contact record. &lt;/p&gt;</description>
-    <fulfillmentFlow>fulfillmentflow_1697538503390_UpdateEmailAddress</fulfillmentFlow>
+    <description
+  >&lt;p&gt;When a user states &amp;quot;change phone number”, &amp;quot;provide phone number&amp;quot;, or any similar input with the same user intent, update the user’s phone associated with their contact record.&lt;/p&gt;</description>
+    <fulfillmentFlow
+  >fulfillmentflow_1697543490742_UpdatePhoneNumber</fulfillmentFlow>
     <inputs>
         <inputType>SinglelineText</inputType>
         <inputVariable>Firstname</inputVariable>
@@ -21,30 +23,30 @@
     </inputs>
     <inputs>
         <inputType>SinglelineText</inputType>
-        <inputVariable>PhoneNumber</inputVariable>
+        <inputVariable>Email</inputVariable>
         <isRequired>true</isRequired>
-        <label>Phone Number</label>
-        <name>PhoneNumber_mapping</name>
+        <label>Email</label>
+        <name>Email_mapping</name>
         <type>UserQuestion</type>
     </inputs>
     <inputs>
-        <inputType>Email</inputType>
-        <inputVariable>PreviousEmailAddress</inputVariable>
+        <inputType>SinglelineText</inputType>
+        <inputVariable>NewPhoneNumber</inputVariable>
         <isRequired>true</isRequired>
-        <label>Previous Email Address</label>
-        <name>PreviousEmailAddress_mapping</name>
+        <label>New Phone Number</label>
+        <name>NewPhoneNumber_mapping</name>
         <type>UserQuestion</type>
     </inputs>
     <inputs>
-        <inputType>Email</inputType>
-        <inputVariable>NewEmailAddress</inputVariable>
+        <inputType>SinglelineText</inputType>
+        <inputVariable>PreviousPhoneNumber</inputVariable>
         <isRequired>true</isRequired>
-        <label>New Email Address</label>
-        <name>NewEmailAddress_mapping</name>
+        <label>Previous Phone Number</label>
+        <name>PreviousPhoneNumber_mapping</name>
         <type>UserQuestion</type>
     </inputs>
     <isFeatured>false</isFeatured>
     <isProtected>false</isProtected>
-    <masterLabel>Update Email Address</masterLabel>
+    <masterLabel>Update Phone Number</masterLabel>
     <status>Published</status>
 </SvcCatalogItemDef>
