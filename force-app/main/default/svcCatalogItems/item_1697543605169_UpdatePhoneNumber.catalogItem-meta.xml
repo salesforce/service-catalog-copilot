@@ -4,23 +4,7 @@
     <description
   >&lt;p&gt;When a user states &amp;quot;change phone number”, &amp;quot;provide phone number&amp;quot;, or any similar input with the same user intent, update the user’s phone associated with their contact record.&lt;/p&gt;</description>
     <fulfillmentFlow
-  >fulfillmentflow_1697543490742_UpdatePhoneNumber</fulfillmentFlow>
-    <inputs>
-        <inputType>SinglelineText</inputType>
-        <inputVariable>Firstname</inputVariable>
-        <isRequired>true</isRequired>
-        <label>Firstname</label>
-        <name>Firstname_mapping</name>
-        <type>UserQuestion</type>
-    </inputs>
-    <inputs>
-        <inputType>SinglelineText</inputType>
-        <inputVariable>Lastname</inputVariable>
-        <isRequired>true</isRequired>
-        <label>Lastname</label>
-        <name>Lastname_mapping</name>
-        <type>UserQuestion</type>
-    </inputs>
+  >fulfillmentflow_1699431605322_AutolaunchUpdatePhoneNumber</fulfillmentFlow>
     <inputs>
         <inputType>SinglelineText</inputType>
         <inputVariable>Email</inputVariable>
@@ -35,14 +19,6 @@
         <isRequired>true</isRequired>
         <label>New Phone Number</label>
         <name>NewPhoneNumber_mapping</name>
-        <type>UserQuestion</type>
-    </inputs>
-    <inputs>
-        <inputType>SinglelineText</inputType>
-        <inputVariable>PreviousPhoneNumber</inputVariable>
-        <isRequired>true</isRequired>
-        <label>Previous Phone Number</label>
-        <name>PreviousPhoneNumber_mapping</name>
         <type>UserQuestion</type>
     </inputs>
     <isFeatured>false</isFeatured>

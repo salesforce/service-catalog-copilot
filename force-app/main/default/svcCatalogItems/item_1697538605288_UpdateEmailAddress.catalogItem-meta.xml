@@ -4,33 +4,9 @@
     <description
   >&lt;p&gt;When a user states “change email&amp;quot;, “update email”, &amp;quot;provide email&amp;quot;, or any similar input with the same user intent, update the user’s email associated with their contact record. &lt;/p&gt;</description>
     <fulfillmentFlow
-  >fulfillmentflow_1697538503390_UpdateEmailAddress</fulfillmentFlow>
+  >fulfillmentflow_1699431127978_AutolaunchUpdateEmailAddress</fulfillmentFlow>
     <inputs>
         <inputType>SinglelineText</inputType>
-        <inputVariable>Firstname</inputVariable>
-        <isRequired>true</isRequired>
-        <label>Firstname</label>
-        <name>Firstname_mapping</name>
-        <type>UserQuestion</type>
-    </inputs>
-    <inputs>
-        <inputType>SinglelineText</inputType>
-        <inputVariable>Lastname</inputVariable>
-        <isRequired>true</isRequired>
-        <label>Lastname</label>
-        <name>Lastname_mapping</name>
-        <type>UserQuestion</type>
-    </inputs>
-    <inputs>
-        <inputType>SinglelineText</inputType>
-        <inputVariable>PhoneNumber</inputVariable>
-        <isRequired>true</isRequired>
-        <label>Phone Number</label>
-        <name>PhoneNumber_mapping</name>
-        <type>UserQuestion</type>
-    </inputs>
-    <inputs>
-        <inputType>Email</inputType>
         <inputVariable>PreviousEmailAddress</inputVariable>
         <isRequired>true</isRequired>
         <label>Previous Email Address</label>
@@ -38,7 +14,7 @@
         <type>UserQuestion</type>
     </inputs>
     <inputs>
-        <inputType>Email</inputType>
+        <inputType>SinglelineText</inputType>
         <inputVariable>NewEmailAddress</inputVariable>
         <isRequired>true</isRequired>
         <label>New Email Address</label>

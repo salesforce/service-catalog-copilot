@@ -4,23 +4,7 @@
     <description
   >&lt;p&gt;When a user states &amp;quot;I need help or assistance&amp;quot;, &amp;quot;Create a Case&amp;quot;, or any similar input with the same user intent, a new case is created for the user. If a user contact record doesn&amp;#39;t exist, a new contact record is created. &lt;/p&gt;</description>
     <fulfillmentFlow
-  >fulfillmentflow_1696422276484_CreateNewCase</fulfillmentFlow>
-    <inputs>
-        <inputType>SinglelineText</inputType>
-        <inputVariable>Firstname_Input</inputVariable>
-        <isRequired>true</isRequired>
-        <label>Firstname</label>
-        <name>Firstname_Input_mapping</name>
-        <type>UserQuestion</type>
-    </inputs>
-    <inputs>
-        <inputType>SinglelineText</inputType>
-        <inputVariable>Lastname_Input</inputVariable>
-        <isRequired>true</isRequired>
-        <label>Lastname</label>
-        <name>Lastname_Input_mapping</name>
-        <type>UserQuestion</type>
-    </inputs>
+  >fulfillmentflow_1699430848872_AutolaunchCreateNewCase</fulfillmentFlow>
     <inputs>
         <inputType>SinglelineText</inputType>
         <inputVariable>Email_Input</inputVariable>
@@ -31,17 +15,9 @@
     </inputs>
     <inputs>
         <inputType>SinglelineText</inputType>
-        <inputVariable>Phone_Number_Ipnut</inputVariable>
-        <isRequired>true</isRequired>
-        <label>Phone Number</label>
-        <name>Phone_Number_Ipnut_mapping</name>
-        <type>UserQuestion</type>
-    </inputs>
-    <inputs>
-        <inputType>SinglelineText</inputType>
         <inputVariable>Description_Input</inputVariable>
         <isRequired>true</isRequired>
-        <label>Case Description</label>
+        <label>What do you need help with?</label>
         <name>Description_Input_mapping</name>
         <type>UserQuestion</type>
     </inputs>

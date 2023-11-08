@@ -4,7 +4,7 @@
     <decisions>
         <name>Does_Contact_Exists</name>
         <label>Does Contact Exists</label>
-        <locationX>182</locationX>
+        <locationX>176</locationX>
         <locationY>242</locationY>
         <defaultConnector>
             <targetReference>Create_Case</targetReference>
@@ -20,12 +20,11 @@
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
-            <connector>
-                <targetReference>Create_Contact</targetReference>
-            </connector>
             <label>Contact does not exist</label>
         </rules>
     </decisions>
+    <description
+  >Autolaunch flow designed to create case for catalog item and bot usage.</description>
     <environments>Default</environments>
     <interviewLabel
   >Autolaunch - Create New Case {!$Flow.CurrentDateTime}</interviewLabel>
@@ -52,8 +51,8 @@
     <recordCreates>
         <name>Create_Case</name>
         <label>Create Case</label>
-        <locationX>182</locationX>
-        <locationY>542</locationY>
+        <locationX>264</locationX>
+        <locationY>350</locationY>
         <inputAssignments>
             <field>ContactId</field>
             <value>
@@ -87,103 +86,18 @@
         <object>Case</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
-    <recordCreates>
-        <name>Create_Contact</name>
-        <label>Create Contact</label>
-        <locationX>50</locationX>
-        <locationY>350</locationY>
-        <assignRecordIdToReference
-    >Current_Contact.Id</assignRecordIdToReference>
-        <connector>
-            <targetReference>Create_Case</targetReference>
-        </connector>
-        <inputAssignments>
-            <field>Email</field>
-            <value>
-                <elementReference>Email_Input</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>FirstName</field>
-            <value>
-                <elementReference>Firstname_Input</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>LastName</field>
-            <value>
-                <elementReference>Lastname_Input</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Phone</field>
-            <value>
-                <elementReference>Phone_Number_Ipnut</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Contact</object>
-    </recordCreates>
     <recordLookups>
         <description>Get contact id from the entered input values</description>
         <name>Get_Contact</name>
         <label>Get Contact id</label>
-        <locationX>182</locationX>
+        <locationX>176</locationX>
         <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound
     >false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Does_Contact_Exists</targetReference>
         </connector>
-        <filterLogic>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7) AND 8</filterLogic>
-        <filters>
-            <field>FirstName</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Firstname_Input</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>LastName</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Lastname_Input</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>AssistantPhone</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Phone_Number_Ipnut</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>HomePhone</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Phone_Number_Ipnut</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>MobilePhone</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Phone_Number_Ipnut</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>OtherPhone</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Phone_Number_Ipnut</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Phone</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Phone_Number_Ipnut</elementReference>
-            </value>
-        </filters>
+        <filterLogic>1</filterLogic>
         <filters>
             <field>Email</field>
             <operator>EqualTo</operator>
@@ -198,7 +112,7 @@
         </outputAssignments>
     </recordLookups>
     <start>
-        <locationX>56</locationX>
+        <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_Contact</targetReference>
@@ -222,34 +136,6 @@
     </variables>
     <variables>
         <name>Email_Input</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>Firstname_Input</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>Lastname_Input</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>Phone_Number_Ipnut</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>Subject_Input</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
