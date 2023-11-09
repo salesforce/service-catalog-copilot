@@ -1,0 +1,13 @@
+{
+  "orgName": "Service Catalog Copilot",
+  "edition": "Developer",
+  "features": ["CustomerServiceCatalog"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}
