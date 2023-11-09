@@ -80,7 +80,7 @@
         <inputAssignments>
             <field>Subject</field>
             <value>
-                <stringValue>Service Catalog Case </stringValue>
+                <stringValue>Service Catalog Case</stringValue>
             </value>
         </inputAssignments>
         <object>Case</object>
