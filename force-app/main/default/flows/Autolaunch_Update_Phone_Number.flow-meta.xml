@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
-    <description
-  >Autolaunch flow designed to update Phone Number for catalog item and bot usage.</description>
+    <description>Autolaunch flow designed to update Phone Number for catalog item and bot usage.</description>
     <environments>Default</environments>
-    <interviewLabel
-  >Autolaunch - Update Phone Number {!$Flow.CurrentDateTime}</interviewLabel>
+    <interviewLabel>Autolaunch - Update Phone Number {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Autolaunch - Update Phone Number</label>
     <processMetadataValues>
         <name>BuilderType</name>
@@ -27,8 +25,7 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
-        <description
-    >Update the Email field from the Contact record</description>
+        <description>Update the Email field from the Contact record</description>
         <name>Update_Phone_Number</name>
         <label>Update Contact Record - Phone Number</label>
         <locationX>176</locationX>
