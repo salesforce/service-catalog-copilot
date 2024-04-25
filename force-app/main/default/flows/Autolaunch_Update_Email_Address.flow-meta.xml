@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
-    <description
-  >Autolaunch flow designed to update Email address for catalog item and bot usage.</description>
+    <description>Autolaunch flow designed to update Email address for catalog item and bot usage.</description>
     <environments>Default</environments>
-    <interviewLabel
-  >Autolaunch - Update Email Address {!$Flow.CurrentDateTime}</interviewLabel>
+    <interviewLabel>Autolaunch - Update Email Address {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Autolaunch - Update Email Address</label>
     <processMetadataValues>
         <name>BuilderType</name>
@@ -27,8 +25,7 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
-        <description
-    >Update the Email field from the Contact record</description>
+        <description>Update the Email field from the Contact record</description>
         <name>Update_Email</name>
         <label>Update Contact Record - Email</label>
         <locationX>176</locationX>

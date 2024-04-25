@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description
-  >Update user’s phone number associated to his Contact record.</description>
-    <flow>
-Autolaunch_Update_Phone_Number;
-  </flow>
+    <description>Update user’s phone number associated to his Contact record.</description>
+    <flow>Autolaunch_Update_Phone_Number</flow>
     <isProtected>false</isProtected>
     <items>
         <catalogInputVariable>Email</catalogInputVariable>
         <displayType>Text</displayType>
-        <isAdditionalQuestionsInputVariable
-    >false</isAdditionalQuestionsInputVariable>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
         <isRequired>true</isRequired>
         <masterLabel>Email</masterLabel>
     </items>
     <items>
         <catalogInputVariable>NewPhoneNumber</catalogInputVariable>
         <displayType>Text</displayType>
-        <isAdditionalQuestionsInputVariable
-    >false</isAdditionalQuestionsInputVariable>
+        <isAdditionalQuestionsInputVariable>false</isAdditionalQuestionsInputVariable>
         <isRequired>true</isRequired>
         <masterLabel>New Phone Number</masterLabel>
     </items>

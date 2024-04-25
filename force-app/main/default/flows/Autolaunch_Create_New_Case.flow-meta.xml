@@ -23,11 +23,9 @@
             <label>Contact does not exist</label>
         </rules>
     </decisions>
-    <description
-  >Autolaunch flow designed to create case for catalog item and bot usage.</description>
+    <description>Autolaunch flow designed to create case for catalog item and bot usage.</description>
     <environments>Default</environments>
-    <interviewLabel
-  >Autolaunch - Create New Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <interviewLabel>Autolaunch - Create New Case {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Autolaunch - Create New Case</label>
     <processMetadataValues>
         <name>BuilderType</name>
@@ -92,8 +90,7 @@
         <label>Get Contact id</label>
         <locationX>176</locationX>
         <locationY>134</locationY>
-        <assignNullValuesIfNoRecordsFound
-    >false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Does_Contact_Exists</targetReference>
         </connector>
