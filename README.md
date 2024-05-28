@@ -1,11 +1,14 @@
 # Title
 
-This repo contains sample catalog items for Einstein Copilot.
+This repository contains sample catalog items for Einstein Copilot.
 
 ## Installation
 
-Install the Service Catalog Copilot metadata with `sf` CLI, or using this button.
+### Use Salesforce CLI
 
-<a href="https://githubsfdeploy.herokuapp.com?owner=salesforce&amp;repo=service-catalog-copilot">
-  <img src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png" alt="Deploy to Salesforce" />
-</a>
+1. Install [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli)
+2. Connect Salesforce CLI to your org: 
+* `sf org login web --alias yourOrgAlias --instance-url https://yourOrg.sandbox.my.salesforce.com` 
+* Use domain URL found in Setup > Company Settings > My Domain
+3. Deploy Service Catalog Copilot metadata: 
+* `sf project deploy start --source-dir force-app --target-org yourOrgAlias`
