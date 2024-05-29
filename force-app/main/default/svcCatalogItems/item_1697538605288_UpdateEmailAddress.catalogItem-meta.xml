@@ -21,6 +21,6 @@
     </inputs>
     <isFeatured>false</isFeatured>
     <isProtected>false</isProtected>
-    <masterLabel>Update Email Address</masterLabel>
+    <masterLabel>Update Email Address (Beta)</masterLabel>
     <status>Published</status>
 </SvcCatalogItemDef>
