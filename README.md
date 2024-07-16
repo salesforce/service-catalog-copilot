@@ -1,4 +1,4 @@
-# Title
+# Service Catalog In Copilot
 
 This repository contains sample catalog items for Einstein Copilot.
 
