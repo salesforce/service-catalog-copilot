@@ -1,5 +1,5 @@
 {
-  "name": "service-catalog-copilot",
+  "name": "@salesforce/service-catalog-copilot",
   "private": true,
   "version": "1.0.0",
   "description": "Catalog items for Einstein Copilot",
